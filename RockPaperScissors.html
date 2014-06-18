@@ -1,0 +1,52 @@
+<!-- This is a page for playing a rock/paper/scissors game -->
+<html>
+<head>
+<title>Rock | Paper | Scissors</title>
+
+<script src="RockPaperScissors.js"></script>
+
+</head>
+
+<body>
+<h2> The Ultimate Rock/Paper/Scissors Game</h2>
+
+Make your choice, then click "Play". <br><br>
+
+<input type="RADIO" name="userChoice" id="uC1" value="ROCK"> Rock <br>
+<input type="RADIO" name="userChoice" id="uC2" value="PAPER"> Paper <br>
+<input type="RADIO" name="userChoice" id="uC3" value="SCISSORS"> Scissors <br><br>
+
+<button type="button" id="Play" onclick="rockPaperScissors()">Play</button> 
+<button type="button" id="Reset" onclick="reset()">Reset Score</button>
+<br><br>
+
+<table border = "1">
+<tr>
+    <th>User Choice</th>
+    <th>Computer Choice</th>
+    <th>Winner</th>
+</tr>
+<tr>
+    <td><div id="uChoiceDisplay"> <!-- Display user choice here --> </div></td>
+    <td><div id="cChoiceDisplay"> <!-- Display computer choice here --> </div></td>
+    <td><div id="winnerDisplay"> <!-- Display winner here --> </div></td>
+</tr>
+
+</table>
+<br><br>
+<table border = "1">
+<tr>
+    <th>User Score</th>
+    <th>Computer Score</th>
+</tr>
+<tr>
+    <td><div id="uScoreDisplay"> 0 <!-- Display user score here --> </div></td>
+    <td><div id="cScoreDisplay"> 0 <!-- Display computer score here --> </div></td>
+</tr>
+
+</table>
+
+</body>
+
+
+</html>
